@@ -8,7 +8,7 @@ export default defineConfig({
   name: 'Xubrtech',
   title: 'studio_xubrtech_backend',
   projectId: process.env.SANITY_STUDIO_PROJECT_ID as string,
-  dataset: process.env.SANITY_STUDIO_DATASET || 'development',
+  dataset: process.env.SANITY_STUDIO_DATASET || 'production',
   basePath: '/studio',
   plugins: [structureTool(), visionTool(), codeInput()],
 
