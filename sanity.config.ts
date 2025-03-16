@@ -10,7 +10,7 @@ export default defineConfig({
   projectId: process.env.SANITY_STUDIO_PROJECT_ID as string,
   dataset: process.env.SANITY_STUDIO_DATASET || 'production',
   basePath: '/studio',
-  token: process.env.SANITY_API_TOKEN,
+
   plugins: [structureTool(), visionTool(), codeInput()],
 
   schema: {
